@@ -1,0 +1,14 @@
+{
+  "name": "trendai-value-report",
+  "owner": {
+    "name": "Deborah Larkins",
+    "email": "deborah_larkins@trendmicro.com"
+  },
+  "plugins": [
+    {
+      "name": "value-report",
+      "source": "./",
+      "description": "TrendAI Vision One customer value-report deck builder (generic, any customer)."
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "_note": "Skeleton for a new customer's value report. Fill in customer/report_title/month_year/as_of/presenter immediately; every other section holds placeholder shapes only — overwrite with live TrendAI Vision One portal data before building. Delete this _note key before/while filling in (build script ignores unknown keys, but keep it tidy).",
+  "customer": "[ Customer Name ]",
+  "report_title": "TrendAI Vision One™ Value Report",
+  "month_year": "[ Month Year, e.g. July 2026 ]",
+  "as_of": "[ Month Day, Year, e.g. July 1, 2026 ]",
+  "presenter": "[ Presenter Name ]",
+
+  "cyber": {
+    "cri": "0",
+    "cri_level": "[ e.g. MEDIUM RISK ]",
+    "regional_avg": "0",
+    "categories": [
+      {"title": "Devices", "risk_level": "Medium", "headline": "0", "sub": "0 can be assessed  •  0 with managed agents"},
+      {"title": "Internet-Facing Assets", "risk_level": "Medium", "headline": "0", "sub": "0 IP addresses  •  0 domains"},
+      {"title": "Accounts", "risk_level": "Medium", "headline": "0", "sub": "0 domain accounts  •  0 service accounts"},
+      {"title": "Applications", "risk_level": "Medium", "headline": "0", "sub": "0 Low  •  0 Medium  •  0 High"},
+      {"title": "Cloud Assets", "risk_level": "Medium", "headline": "0", "sub": "0 Low  •  0 Medium  •  0 High"},
+      {"title": "Vulnerabilities", "risk_level": "", "headline": "0", "sub": "0 High  •  0 Medium  •  0 Low"}
+    ]
+  },
+
+  "risk_detail": [
+    {"title": "Devices", "risk_level": "Medium", "factors": [["0", "Detected vulnerabilities (CVEs)"], ["0", "Cyber threats found on devices"]]},
+    {"title": "Internet-Facing Assets", "risk_level": "Medium", "factors": [["0", "Unexpected internet-facing services/ports"], ["0", "Insecure domains"]]},
+    {"title": "Accounts", "risk_level": "Medium", "factors": [["0", "Weak sign-in events"], ["0", "Account compromise events"]]},
+    {"title": "Applications", "risk_level": "Medium", "factors": [], "note": "[ Fill in, or leave factors empty with this note if no data source is configured. ]"},
+    {"title": "Cloud Assets", "risk_level": "Medium", "factors": [["0", "Vulnerabilities in container images"], ["0", "Compliance violations"]]},
+    {"title": "Vulnerabilities", "risk_level": "", "factors": [["0", "High severity CVEs"], ["0", "Medium severity CVEs"], ["0", "Low severity CVEs"]]}
+  ],
+
+  "mdr": {
+    "period": "[ e.g. June 1-30, 2026 ]",
+    "funnel": [
+      ["0", "Activity data"],
+      ["0", "Observed Attack Techniques"],
+      ["0", "Workbench alerts"],
+      ["0", "MDR cases"],
+      ["0", "Noteworthy cases"],
+      ["0", "Confirmed incidents"]
+    ],
+    "mtta": "0 min",
+    "mtti": "0 min",
+    "mttr": "0 min",
+    "mttx_caption": "Mean time across all cases",
+    "action_title": "[ e.g. No response actions required ]",
+    "action_status": "CLEAR",
+    "action_sub": "0 response-action requests   •   0 approvals",
+    "outcome_num": "0",
+    "outcome_label": "Confirmed security incidents",
+    "outcome_sub": "0 MDR cases opened   •   0 noteworthy   •   0 incidents confirmed this period"
+  },
+
+  "data_source": {
+    "period": "[ e.g. Daily usage: July 1, 2026 ]",
+    "metrics": [
+      {"label": "New Analytic Ingestion", "value": "0 GB"},
+      {"label": "New Archival Ingestion", "value": "0 GB"},
+      {"label": "Total Extended Analytic Retention", "value": "0 GB"},
+      {"label": "Total Extended Archival Retention", "value": "0 GB"}
+    ],
+    "sources": [
+      ["[ Data source name ]", "[ Category ]", "0 GB", "0 GB"]
+    ]
+  },
+
+  "identity": {
+    "risk_level": "[ e.g. Medium ]",
+    "risk_events": [
+      ["1", "[ event type ]", "0", "0"]
+    ],
+    "exposure_events": [
+      ["[ event type ]", "0", "0"]
+    ],
+    "attack_events": [
+      ["[ event type ]", "0", "0"]
+    ],
+    "risky_accounts": [
+      ["1", "[ name ]", "[ title ]", "0.0"]
+    ],
+    "risky_accounts_note": "[ Fill in, or leave as default if no risky-account ranking is available for this tenant's identity data sources. ]"
+  },
+
+  "data_security": {
+    "score": "0",
+    "risk_level": "[ e.g. Medium ]",
+    "total_assets": "0",
+    "sensitive_assets": "0",
+    "monitored_assets": "0",
+    "categories": [
+      ["Personal", 0],
+      ["Financial", 0],
+      ["Credentials", 0],
+      ["Other", 0],
+      ["Custom", 0]
+    ],
+    "top_assets": [
+      ["[ Asset name ]", "[ Type ]", "[ Sensitive data type(s) ]", "0.0"]
+    ]
+  },
+
+  "standard_endpoint_protection": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if Standard Endpoint Protection (Protection Manager) shows 'Protection Manager is not set up' and Endpoint Inventory has no Standard Endpoint Protection deployment facet for this tenant. ]",
+    "endpoint_status": {"managed": "0", "at_risk": "0", "outdated": "0", "offline": "0"},
+    "threats": []
+  },
+  "server_workload_protection": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if Server & Workload Protection (/app/epp/workload-protection) shows no Cloud One Workload Security dashboard data for this tenant. ]",
+    "computer_status": {"managed": "0", "critical": "0", "warning": "0", "unmanaged": "0"},
+    "alert_status": {
+      "period": "Last 30 days",
+      "categories": [
+        ["Anti-Malware", "0", "[ e.g. Log, Quarantined ]"],
+        ["Web Reputation", "0", "—"],
+        ["Intrusion Prevention", "0", "[ e.g. Reset ]"],
+        ["Application Control", "0", "[ e.g. Allowed ]"],
+        ["Device Control", "0", "—"],
+        ["Firewall", "0", "[ e.g. Fail Open: Deny, Log Only ]"],
+        ["Log Inspection", "0", "Logged"],
+        ["Integrity Monitoring", "0", "Logged"]
+      ]
+    }
+  },
+
+  "cloud_security": {
+    "risk_index": "0",
+    "risk_level": "[ e.g. Medium ]",
+    "cloud_overview": {
+      "headline_value": "0",
+      "headline_label": "Cloud accounts",
+      "headline_sub": "[ e.g. 0 AWS, 0 Azure, 0 GCP ]",
+      "metrics": [
+        ["Threat alerts (30 days)", "0"],
+        ["Potential attack paths", "0"],
+        ["High-risk cloud assets", "0"],
+        ["Compliance (avg across frameworks)", "0%"]
+      ]
+    },
+    "entitlements": {
+      "headline_value": "0",
+      "headline_label": "Total identities",
+      "headline_sub": "0 human admins  •  0 non-human admins",
+      "metrics": [
+        ["Unused identities", "0"],
+        ["Overprivileged identities", "0"],
+        ["Identity risk events (30 days)", "0"],
+        ["Top risk event", "[ Fill in ]"]
+      ]
+    },
+    "ai_spm": {
+      "headline_value": "0",
+      "headline_label": "AI-related cloud assets",
+      "headline_sub": "0 high-risk  •  0 cloud accounts",
+      "metrics": [
+        ["Workloads", "0"],
+        ["Entitlements", "0"],
+        ["Data storage", "0"],
+        ["Threat detections (30 days)", "0"]
+      ]
+    },
+    "apis": {
+      "headline_value": "0",
+      "headline_label": "API collections",
+      "headline_sub": "[ e.g. 0 Medium risk  •  Predominantly Public exposure ]",
+      "metrics": [
+        ["Dominant API type", "[ e.g. REST ]"],
+        ["Dominant exposure", "[ e.g. Public ]"],
+        ["Dominant activity", "[ e.g. Inactive ]"],
+        ["Typical asset risk score", "0"]
+      ]
+    }
+  },
+
+  "network_security": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if Network Overview / Network Inventory show a 'Choose a deployment option to continue' onboarding wizard (Virtual Network Sensor / Deep Discovery Inspector / TippingPoint) for this tenant. ]",
+    "modules": []
+  },
+
+  "email": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if Email and Collaboration Security → Configuration and Operations → Overview shows 'No data to display.' on all widgets (Top Users with Account Takeover Risks, Top Users with Targeted Attack Risks, Scanning Breakdown, Threats Detection Count) for this tenant. ]",
+    "scanned": "0",
+    "threats_total": "0",
+    "top_threat": "0",
+    "top_threat_label": "[ e.g. Phishing — top threat ]",
+    "threat_max": 1,
+    "threats": [
+      ["Phishing", 0],
+      ["Malicious URL", 0],
+      ["Scam", 0],
+      ["Anomalies", 0],
+      ["Malicious File", 0],
+      ["BEC", 0],
+      ["Ransomware", 0]
+    ],
+    "recipients": []
+  },
+
+  "intel": {
+    "summary": ["0", "0", "0", "0"],
+    "reports": [],
+    "note": "[ Fill in: matched-sweep summary for the last 30 days, or a positive-signal note if zero matches. ]",
+    "explanation": "A matched sweep means an indicator from a curated threat-intelligence report was observed in your telemetry."
+  },
+
+  "workflow_automation": {
+    "playbooks": [],
+    "playbooks_note": "[ Fill in, or leave playbooks empty with this note if none are configured. Source: Workflow and Automation → Security Playbooks. ]",
+    "integrations": [],
+    "integrations_note": "[ Fill in, or leave integrations empty with this note if none are configured. Source: Cyber Risk Exposure Management → Data Sources, status = Configured. ]"
+  },
+
+  "ai_security": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if AI Security Blueprint / AI Application Security / AI Secure Access are all still showing 'Start paid usage' / 'Start free trial' landing pages for this tenant. ]",
+    "modules": []
+  },
+
+  "zero_trust": {
+    "applicable": false,
+    "not_applicable_note": "[ Fill in, or leave as default if the Zero Trust Secure Access overview is still showing a 'Start paid usage' / 'Start free trial' landing page for this tenant. ]",
+    "modules": []
+  },
+
+  "credits": {
+    "term": "[ e.g. Term: Jan 2026 - Dec 2026 ]",
+    "purchased": "1",
+    "used": "0",
+    "used_pct": "0%",
+    "balance": "0",
+    "balance_pct": "0%",
+    "planned": "0",
+    "chart_max": 8000,
+    "gridlines": [0, 2000, 4000, 6000, 8000],
+    "months": [
+      ["[ Month Year ]", 0, 0]
+    ],
+    "bullets": [
+      "[ Fill in credit-usage bullets from the live pull. ]"
+    ]
+  },
+
+  "team": {
+    "roles": [
+      ["ACCOUNT MANAGER", "red"],
+      ["CUSTOMER SUCCESS MANAGER", "teal"],
+      ["SALES ENGINEER", "blue"],
+      ["TECHNICAL ACCOUNT MANAGER / SUPPORT", "orange"]
+    ]
+  }
+}

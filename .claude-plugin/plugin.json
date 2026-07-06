@@ -1,0 +1,9 @@
+{
+  "name": "value-report",
+  "version": "1.0.0",
+  "description": "Build a TrendAI Vision One customer value-report PowerPoint deck for any customer. Asks who the report is for and who's presenting, re-pulls Vision One portal data via Blueprint MCP, and runs the bundled generic build script to produce a dark-theme deck on the Desktop.",
+  "author": {
+    "name": "Deborah Larkins",
+    "email": "deborah_larkins@trendmicro.com"
+  }
+}
