@@ -24,13 +24,11 @@ Each user needs these on their own machine — the plugin does **not** install t
 ## Install
 
 ```
-/plugin marketplace add DeborahLarkins/value-report-plugin
+/plugin marketplace add DebLarkAU/claudevaluereport
 /plugin install value-report@trendai-value-report
 ```
 
-- The first line registers this repo as a plugin marketplace. Replace
-  `DeborahLarkins/value-report-plugin` with the actual `owner/repo` once it's
-  pushed to GitHub (or a local path / internal git URL).
+- The first line registers this repo as a plugin marketplace.
 - The second installs the `value-report` plugin from the `trendai-value-report`
   marketplace defined in this repo.
 
